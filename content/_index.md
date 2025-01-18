@@ -23,6 +23,24 @@ Talk CommonWears 2025
 <img src="disi.svg" style="width: 35%" />
 </div>
 
-
-
 ---
+
+# Motivation
+
+ **Computing devices** are more and more *ubiquitous* in every day life, enabling lots of *potential applications*, <br> such as: crowd monitoring, smart surveillance, air quality monitoring, and many more.
+
+{{<multicol>}}
+
+{{<col>}}
+<img src="wearables.jpg" style="width: 89%" />
+{{</col>}}
+
+{{<col>}}
+<img src="pedastrian.png" style="width: 100%" />
+{{</col>}}
+
+{{<col>}}
+<img src="smart-city.jpg" style="width: 75%" />
+{{</col>}}
+
+{{</multicol>}}
