@@ -83,8 +83,84 @@ Talk CommonWears 2025
 
 ---
 
+# Clustered Federated Learning
+
+<img src="clustered-FL.svg" style="width: 60%" />
+
+{{<multicol>}}
+
+{{<col>}}
+<div style="text-align: left; font-size: 20pt;">
+
+{{% fragment %}}
+<p> <i class="fa-solid fa-angle-right" style="color: #22373b;"></i> <em>Assumption:</em> clients can be divided in clusters (IID data within each cluster) </p>
+<p> <i class="fa-solid fa-angle-right" style="color: #22373b;"></i> <em>Multiple models </em> are trained to target various local distributions </p>
+<p> <i class="fa-solid fa-angle-right" style="color: #22373b;"></i> <em>Similarity measures:</em> loss based, gradient based, weight based </p>
+{{%/ fragment %}}
+
+</div>
+
+
+{{</col>}}
+
+{{<col>}}
+<div style="font-size: 20pt;">
+
+{{% fragment %}}
+
+<div style="text-align: left; font-size: 20pt; margin-left:10%;">
+<p> <i class="fa-solid fa-xmark"style="color: red;"></i> Clustering is performed by a central server </p>
+<p> <i class="fa-solid fa-xmark"style="color: red;"></i> Number of clusters must be defined a priori </p>
+</div>
+{{%/ fragment %}}
+</div>
+{{</col>}}
+
+{{</multicol>}}
+
+--- 
+
+# Proximity-based Federated Learning
+
+{{<multicol>}}
+{{<col>}}
+
+<div class="r-stack">
+  <img
+      class="fragment current-visible"
+      data-fragment-index="0"
+      src="zones.svg"
+      style = "width: 90%"
+  />
+  <img
+      class="fragment current-visible"
+      data-fragment-index="1"
+      src="zones2.svg"
+      style = "width: 90%"
+  />
+  <img
+      class="fragment current-visible"
+      data-fragment-index="2"
+      src="zones3.svg"
+      style = "width: 90%"
+  />
+
+</div>
+{{</col>}}
+{{</multicol>}}
+
+---
+
 # Sparse Neural Networks
 
 <br>
 
 <img src="sparsity.svg" style="width: 70%" />
+
+--- 
+
+# Challenges of SNN in FL
+
+- How to measure NN similarity (not using loss based methods)
+- How to merge models that are different
+- Maximum acceptable level of sparsity
