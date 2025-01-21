@@ -83,6 +83,39 @@ Talk CommonWears 2025
 
 ---
 
+# Pros and cons 
+
+<br>
+
+{{<multicol>}}
+
+{{<col>}}
+
+<h2> Centralized FL </h2>
+<div style="text-align:left; margin-left:20%;">
+    <p> <i class="fa-solid fa-check" style="color: green;"></i> Reduces privacy concerns </p>
+    <p> <i class="fa-solid fa-xmark" style="color: red;"></i> Single point of failure </p>
+    <p> <i class="fa-solid fa-xmark" style="color: red;"></i> Need for a central trusted entity </p>
+    <p> <i class="fa-solid fa-xmark" style="color: red;"></i> Heterogeneity </p>
+</div>
+{{</col>}}
+
+{{<col>}}
+
+<h2> P2P FL </h2>
+<div style="text-align:left; margin-left:20%;">
+    <p> <i class="fa-solid fa-check" style="color: green;"></i> Reduces privacy concerns </p>
+    <p> <i class="fa-solid fa-check" style="color: green;"></i> No single point of failure </p>
+    <p> <i class="fa-solid fa-check" style="color: green;"></i> No need for a central trusted entity </p>
+    <p> <i class="fa-solid fa-xmark" style="color: red;"></i> Heterogeneity </p>
+    <p> <i class="fa-solid fa-xmark" style="color: red;"></i> Communication overhead </p>
+</div>
+{{</col>}}
+
+{{</multicol>}}
+
+---
+
 # Clustered Federated Learning
 
 <img src="clustered-FL.svg" style="width: 60%" />
@@ -123,6 +156,33 @@ Talk CommonWears 2025
 # Proximity-based Federated Learning
 
 {{<multicol>}}
+
+{{<col>}}
+<img src="scr1.svg" style="width: 100%" />
+{{</col>}}
+
+{{<col>}}
+<img src="scr2.svg" style="width: 100%" />
+{{</col>}}
+
+{{<col>}}
+<img src="scr3.svg" style="width: 100%" />
+{{</col>}}
+
+{{</multicol>}}
+
+<br>
+<br>
+<br>
+
+<div style='font-size:20pt; text-align: left; margin-left:15%'>
+<!-- <small style="text-align: left">  -->
+[1] Domini D., Aguzzi G., Esterle L., Viroli M. "Field-based Coordination for Federated Learning." Coordination 2024.</br>
+[2] Domini D., Farabegoli N., Aguzzi G., Viroli M., Esterle L. "Proximity-based Self-Federated Learning." ACSOS 2024.
+<!-- </small>  -->
+</div>
+
+<!-- {{<multicol>}}
 {{<col>}}
 
 <div class="r-stack">
@@ -147,7 +207,7 @@ Talk CommonWears 2025
 
 </div>
 {{</col>}}
-{{</multicol>}}
+{{</multicol>}} -->
 
 ---
 
@@ -157,11 +217,21 @@ Talk CommonWears 2025
 
 <img src="sparsity.svg" style="width: 70%" />
 
+<br>
+
+<p> <i class="fa-solid fa-play"style="color: black;"></i> <em> Different sparsification methods: </em> pre-pruning, post-pruning, sparse evolutionary training </p>
+
 --- 
 
-# Challenges of SNN in FL
+<!-- # Challenges of SNN in FL -->
 
-- How to measure NN similarity (not using loss based methods)
-- How to merge models that are different
-- Maximum acceptable level of sparsity
-- ...
+# Challenges and future work
+
+<br>
+
+<div style="text-align: left; font-size: 25pt; margin-left:10%;">
+<p> <i class="fa-solid fa-question"style="color: #e07f00;"></i> SNN may evolve differently on each device, how can we merge models that are architecturally different? </p>
+<p> <i class="fa-solid fa-question"style="color: #e07f00;"></i> How to measure neural network similarity avoiding loss-based methods? </p>
+<p> <i class="fa-solid fa-question"style="color: #e07f00;"></i> What is the impact of sparsification on self-federations? </p>
+<p> <i class="fa-solid fa-question"style="color: #e07f00;"></i> How to define the maximum acceptable level of sparsity? </p>
+</div>
