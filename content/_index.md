@@ -209,6 +209,37 @@ Talk CommonWears 2025
 {{</col>}}
 {{</multicol>}} -->
 
+--- 
+
+# Algorithm overview
+
+<br> <br> 
+
+{{<multicol>}}
+
+{{<col>}}
+
+<div class="r-stack">
+
+  <img
+      class="fragment current-visible"
+      data-fragment-index="0"
+      src="algorithm-overview-1.svg"
+      style = "width: 100%"
+  />
+  <img
+      class="fragment current-visible"
+      data-fragment-index="1"
+      src="algorithm-overview-2.svg"
+      style = "width: 100%"
+  />
+
+</div>
+
+  {{</col>}}
+{{</multicol>}}
+
+
 ---
 
 # Sparse Neural Networks
